@@ -1,0 +1,31 @@
+<div align="center">
+  <%= form_with model: @incident, id: 'shortform', local: true do |form| %>
+
+    <% if @incident.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@incident.errors.count, "error") %> prohibited this incident from being saved:</h2>
+
+        <ul>
+        <% @incident.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="form-group">
+      <%= form.label :description %><br>
+      <%= form.text_area :description, required: true, placeholder: 'It is mandatory', style: "height:100px;width:400px;text-align:center" %> 
+    </div>
+
+    <div class="form-group">
+      <%= form.label :add_photos %><br>
+      <%= form.file_field :attachments, multiple: true %>
+    </div>
+
+    <div class="btn btn-primmary">
+      <%= form.submit 'Submit', class: "btn btn-default" %>
+    </div>
+  <% end %>
+  <%= link_to 'Or Submit Detailed Report', new_long_incidents_path, class: "btn btn-default" %>
+</div>

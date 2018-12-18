@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyText
+  types: MyString
+  reported_anonymously: false
+  user_info: 
+  involved_people: MyText
+  other_observers: MyText
+  datetime: MyString
+  location: MyString
+
+two:
+  description: MyText
+  types: MyString
+  reported_anonymously: false
+  user_info: 
+  involved_people: MyText
+  other_observers: MyText
+  datetime: MyString
+  location: MyString

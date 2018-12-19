@@ -49,7 +49,7 @@
 
     <div class="field">
       <%= form.label :location %><br>
-      <%= form.select :location, options_for_select([ ['Select', ''], ['On school campuses and grounds', 'On school campuses and grounds'], ['During transportation to and from school', 'transportation'], ['At school-sponsored events ', 'school_event'], ['More details', 'other'] ]), {}, {} %>
+      <%= form.select :location, options_for_select([ ['Select', ''], ['On school campuses and grounds', 'campus_ground'], ['During transportation to and from school', 'transportation'], ['At school-sponsored events ', 'school_event'], ['More details', 'other'] ]), {}, {} %>
       <%= form.text_field :location, class: "locationtext", style: "display:none;" %>
     </div><br>
 

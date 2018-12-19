@@ -32,3 +32,4 @@
 en:
   hello: "Hello world"
   ty: Thanks for reporting the incident.
+  not_found: Page not found.

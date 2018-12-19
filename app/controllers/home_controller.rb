@@ -3,6 +3,6 @@ class HomeController < ApplicationController
   end
 
   def not_found
-  	render plain: 'Page not found'
+    render plain: t('not_found')
   end
 end
